@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>4:O:FOUR</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+:root{
+    --bg:#050505;
+    --text:#f4f4f4;
+    --muted:#9b9b9b;
+    --border:rgba(255,255,255,.12);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    height:100%;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:Inter,sans-serif;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* ---------- Stars ---------- */
+
+body::before,
+body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+}
+
+body::before{
+    background:
+    radial-gradient(circle at 15% 22%,white 0 1px,transparent 1.7px),
+    radial-gradient(circle at 78% 18%,rgba(255,255,255,.8) 0 .8px,transparent 1.6px),
+    radial-gradient(circle at 32% 80%,white 0 1px,transparent 2px),
+    radial-gradient(circle at 66% 63%,white 0 .8px,transparent 2px),
+    radial-gradient(circle at 90% 74%,rgba(255,255,255,.8) 0 1px,transparent 2px),
+    radial-gradient(circle at 10% 65%,white 0 1px,transparent 2px),
+    radial-gradient(circle at 58% 35%,white 0 1px,transparent 2px),
+    radial-gradient(circle at 46% 12%,rgba(255,255,255,.6) 0 .8px,transparent 2px),
+    radial-gradient(circle at 25% 45%,white 0 .9px,transparent 2px),
+    radial-gradient(circle at 81% 54%,white 0 .9px,transparent 2px);
+    opacity:.45;
+}
+
+body::after{
+    background:
+    radial-gradient(circle at center,rgba(255,255,255,.04),transparent 60%);
+    filter:blur(120px);
+}
+
+.container{
+    width:min(760px,92%);
+    text-align:center;
+    z-index:2;
+}
+
+.brand{
+    font-family:"Space Grotesk",sans-serif;
+    font-size:5rem;
+    font-weight:700;
+    letter-spacing:-3px;
+    margin-bottom:18px;
+}
+
+.subtitle{
+    font-family:"Space Grotesk";
+    font-size:.8rem;
+    letter-spacing:.35em;
+    color:#8d8d8d;
+    text-transform:uppercase;
+    margin-bottom:45px;
+}
+
+p{
+    max-width:610px;
+    margin:auto;
+    line-height:1.9;
+    color:var(--muted);
+    font-size:1.05rem;
+}
+
+.buttons{
+    margin-top:55px;
+    display:flex;
+    justify-content:center;
+    gap:14px;
+    flex-wrap:wrap;
+}
+
+button{
+    font-family:"Space Grotesk";
+    font-size:.95rem;
+    border-radius:999px;
+    padding:15px 28px;
+    cursor:pointer;
+    transition:.3s ease;
+}
+
+/* Primary */
+
+.primary{
+    background:white;
+    color:black;
+    border:none;
+}
+
+.primary:hover{
+    transform:translateY(-2px);
+    box-shadow:0 0 35px rgba(255,255,255,.18);
+}
+
+/* Negative */
+
+.secondary{
+    background:transparent;
+    color:white;
+    border:1px solid var(--border);
+}
+
+.secondary:hover{
+    background:rgba(255,255,255,.05);
+    border-color:rgba(255,255,255,.25);
+}
+
+.footer{
+    margin-top:65px;
+    color:#666;
+    font-size:.78rem;
+    letter-spacing:.25em;
+    text-transform:uppercase;
+}
+
+@media(max-width:700px){
+
+.brand{
+    font-size:3.2rem;
+}
+
+p{
+    font-size:.95rem;
+}
+
+}
+
+grx{
+  /* Apply your gradient */
+  background: linear-gradient(90deg, #00c3ff, #39a806);
+  
+  /* Clip the background to the text */
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  /* Make the original text color invisible so the gradient shows */
+  -webkit-text-fill-color: transparent;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="brand">4:O:FOUR</div>
+
+<div class="subtitle">
+we sell <grx>community</grx>
+</div>
+
+<p>
+Some drops arrive with noise.
+Others appear quietly, waiting to be discovered.
+4:O:FOUR exists somewhere between digital artifacts and physical objects -
+creating limited posters, apparel, and visual experiments inspired by cinema,
+motorsport, and culture.
+</p><br>
+
+
+<div class="buttons">
+
+<button class="primary">
+<i class="fa fa-whatsapp" style="font-size:18px"></i> Drop Channel
+</button>
+
+<button onclick="window.location.href='drops.html'" class="secondary" type="button">
+Open Shop
+</button>
+
+</div>
+
+<div class="footer">
+EST. 2026
+<p style="color:#d8dee9;">
+All our designs are human-made.
+</p>
+</div>
+
+</div>
+
+</body>
+</html>

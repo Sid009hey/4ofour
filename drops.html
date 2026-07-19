@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Current Drop • 4:O:FOUR</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--bg:#050505;
+--text:#f4f4f4;
+--muted:#909090;
+--border:rgba(255,255,255,.10);
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:var(--bg);
+color:var(--text);
+font-family:Inter,sans-serif;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+pointer-events:none;
+opacity:.45;
+
+background:
+radial-gradient(circle at 15% 22%,white 0 1px,transparent 2px),
+radial-gradient(circle at 80% 18%,white 0 .8px,transparent 2px),
+radial-gradient(circle at 34% 72%,white 0 1px,transparent 2px),
+radial-gradient(circle at 70% 60%,white 0 .8px,transparent 2px);
+}
+
+.wrapper{
+
+width:min(1200px,92%);
+margin:auto;
+padding:80px 0;
+
+}
+
+.brand{
+
+text-align:center;
+font-family:"Space Grotesk";
+font-size:4.2rem;
+font-weight:700;
+
+}
+
+.subtitle{
+
+text-align:center;
+margin-top:12px;
+font-family:"Space Grotesk";
+font-size:.8rem;
+letter-spacing:.35em;
+text-transform:uppercase;
+color:#777;
+
+}
+
+.description{
+
+max-width:620px;
+margin:40px auto 90px;
+
+text-align:center;
+color:var(--muted);
+line-height:1.9;
+
+}
+
+.grid{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:34px;
+
+}
+
+.card{
+
+transition:.35s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.poster{
+
+aspect-ratio:3/4;
+
+background:#0d0d0d;
+
+border:1px solid var(--border);
+
+border-radius:20px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-family:"Space Grotesk";
+color:#666;
+
+margin-bottom:24px;
+
+overflow:hidden;
+
+}
+
+.card h2{
+
+font-family:"Space Grotesk";
+font-size:1.35rem;
+
+margin-bottom:8px;
+
+}
+
+.price{
+
+color:white;
+margin-bottom:24px;
+
+}
+
+.buttons{
+
+display:flex;
+gap:12px;
+
+}
+
+button{
+
+padding:13px 24px;
+
+border-radius:999px;
+
+font-family:"Space Grotesk";
+
+cursor:pointer;
+
+transition:.25s;
+
+}
+
+.primary{
+
+background:white;
+color:black;
+border:none;
+
+}
+
+.primary:hover{
+
+transform:translateY(-2px);
+
+}
+
+.secondary{
+
+background:transparent;
+
+color:white;
+
+border:1px solid var(--border);
+
+}
+
+.secondary:hover{
+
+background:rgba(255,255,255,.05);
+
+}
+
+.footer{
+
+margin-top:120px;
+
+text-align:center;
+
+font-size:.8rem;
+
+letter-spacing:.25em;
+
+color:#666;
+
+font-family:"Space Grotesk";
+
+text-transform:uppercase;
+
+}
+
+@media(max-width:950px){
+
+.grid{
+
+grid-template-columns:1fr;
+
+gap:70px;
+
+}
+
+.brand{
+
+font-size:3rem;
+
+}
+
+}
+
+</style>
+
+
+<!--whatsup html starts here 404HTML LETSGO THIS IS GONNA WORK-->
+
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <div class="brand">
+        4:O:FOUR
+    </div>
+
+    <div class="subtitle">
+        CURRENT DROP
+    </div>
+
+    <div class="description">
+        Three pieces. One release. Designed as collectible visual objects inspired by motorsport, cinema and contemporary graphic culture.
+    </div>
+
+    <!-- Cards are inserted here -->
+    <div id="products" class="grid"></div>
+
+    <div class="footer">
+        DROP 001 • EST. 2026
+    </div>
+
+</div>
+
+<script src="drops.js"></script>
+
+</body>
+</html>
