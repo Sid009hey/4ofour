@@ -4,9 +4,9 @@
 
         "title":"Nissan Skyline GT-R",
 
-        "price":"₹899",
+        "price":"₹199 - A3",
 
-        "thumbnail":"assets/skyline.png",
+        "thumbnail":"assets/webnissan1.png",
 
         "drop":"001"
     },
@@ -16,9 +16,9 @@
 
         "title":"Honda NSX",
 
-        "price":"₹899",
+        "price":"₹199 - A3",
 
-        "thumbnail":"assets/nsx.png",
+        "thumbnail":"assets/webhonda1.png",
 
         "drop":"001"
     },
@@ -26,11 +26,11 @@
     {
         "id":"tee",
 
-        "title":"LIMITED NYC",
+        "title":"LIMITED AJ1",
 
-        "price":"₹999",
+        "price":"₹299 - A3",
 
-        "thumbnail":"assets/makeit.png",
+        "thumbnail":"assets/webnike1.png",
 
         "drop":"001"
     }
