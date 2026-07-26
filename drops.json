@@ -33,5 +33,17 @@
         "thumbnail":"assets/webnike1.jpg",
 
         "drop":"001"
+    },
+    
+    {
+        "id":"fcb",
+
+        "title":"LIMITED FC BARCELONA",
+
+        "price":"₹299 - A3",
+
+        "thumbnail":"assets/webfcb1.jpg",
+
+        "drop":"002"
     }
 ]
